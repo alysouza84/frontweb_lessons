@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        ul{
+            list-style: none;
+            padding: 0px;
+        }
+        li{
+            float: left;
+            padding: 10px;
+        }
+        input{
+            margin: 10px;
+        }
+        table{
+            width: 100%;
+            border-collapse: collapse;
+        }
+        td, th{
+            text-align: center;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+        label{
+            font-weight: bold;
+        }
+        th{
+            background-color: darkgreen;
+            color: white;
+        }
+        tfoot td{
+            border: 0px;
+        }
+    </style>
+    <title>Exercicio 5</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <a href="#">
+                    <li>Home</li>
+                </a>
+                <li>
+                    <a href="#">Sobre</a>
+                </li>
+                <a href="#">
+                    <li>Contato</li>
+                </a>
+            </ul>
+            <ul></ul>
+            <ul></ul>
+        </nav>
+    </header>
+    <section>
+        <h1>Exercício</h1>
+        <hr>
+        <form>
+            <label for="nome">Nome: </label>
+            <input type="text" name="nome" id="nome"><br>
+            <label for="cpf">CPF: </label>
+            <input type="text" name="cpf" id="cpf"><br>
+            <label for="endereco">Endereço: </label>
+            <input type="text" name="endereco" id="endereco"><br>
+            <label for="telefone">Telefone: </label>
+            <input type="text" name="telefone" id="telefone"><br>
+            <label for="email">E-mail: </label>
+            <input type="email" name="email" id="email"><br>
+            <input type="submit" value="Enviar">
+            <input type="submit" value="Limpar">
+        </form>
+        <hr>
+    <section>
+        <table>
+            <colgroup>
+                <col>
+                <col style="background-color: aquamarine;">
+                <col>
+                <col style="background-color: aquamarine;">
+            </colgroup>
+            <thead>
+                <tr>
+                    <th>nome</th>
+                    <th>CPF</th>
+                    <th>endereco</th>
+                    <th>telefone</th>
+                    <th>email</th>
+                </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Jose</td>
+                <td>123455678</td>
+                <td>Rua das flores</td>
+                <td>419999999</td>
+                <td>jose@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Jose</td>
+                <td>123455678</td>
+                <td>Rua das flores</td>
+                <td>419999999</td>
+                <td>jose@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Jose</td>
+                <td>123455678</td>
+                <td>Rua das flores</td>
+                <td>419999999</td>
+                <td>jose@gmail.com</td>
+            </tr>
+            </tbody>
+            <tfoot>
+                <td colspan="5">
+                    <form>
+                        <input type="button" value="Anterior">
+                        <select name="pag" id="pag">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                        <input type="button" value="Próximo">
+                    </form>
+                </td>
+            </tfoot>
+        </table>
+    <footer>
+        &copy;2023
+    </footer>
+</body>
+</html>
